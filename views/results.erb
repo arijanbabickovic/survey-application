@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css"/>
+        <title>Survey Results</title>
+    </head>
+    <body>
+    <h1>Survey Results</h1>
+        <table>
+            <tr height="50px">
+                <th>Email</th>
+                <th>Staff</th>
+                <th>Register</th>
+                <th>Organization</th>
+                <th>Fitting Room</th>
+                <th>Products</th>
+                <th>Price</th> 
+                <th>Sizes</th>
+            </tr>
+            <% @hash.each_value do |value| %>
+                <tr height="50px">
+                    <td><%= value["email"] %></td>
+                    <td><%= value["staff"] %></td>
+                    <td><%= value["register"] %></td>
+                    <td><%= value["organization"] %></td>
+                    <td><%= value["fitting_room"] %></td>
+                    <td><%= value["products"] %></td>
+                    <td><%= value["price"] %></td>
+                    <td><%= value["sizes"] %></td>
+                </tr>
+            <% end %>
+        </table>
+
+        <table id="averages_table">
+            <tr height="50px">
+                <th>Category:</th>
+                <th>Average score (out of 5.0):</th>
+            </tr>
+            <tr height="50px">
+                <td>Staff:</td>
+                <td><%= @staff %></td>
+            </tr>
+            <tr height="50px">
+                <td>Register:</td>
+                <td><%= @register %></td>
+            </tr>
+            <tr height="50px">
+                <td>Organization:</td>
+                <td><%= @organization %></td>
+            </tr>
+            <tr height="50px">
+                <td>Fitting room:</td>
+                <td><%= @fitting_room %></td>
+            </tr>
+            <tr height="50px">
+                <td>Products:</td>
+                <td><%= @products %></td>
+            </tr>
+            <tr height="50px">
+                <td>Price:</td>
+                <td><%= @price %></td>
+            </tr>
+            <tr height="50px">
+                <td>Sizes:</td>
+                <td><%= @sizes %></td>
+            </tr>
+        </table>
+        <span style="font-size:1.2em;"><center><a href="/">Back</a></center></span>
+    </body>
+</html>

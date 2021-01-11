@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css"/>
+        <title>Survey</title>
+    </head>
+    <body>
+        <h1>Tell us about your last visit to our store:</h1>
+        <form method="POST" action="/form">
+        <form>
+        <table>
+            <tr>
+                <th id="form_header" colspan="6" height="40px">How satisfied or dissatisfied are you with the following:</th>
+            </tr>
+            <tr height="50px">
+            <td>The interaction with the sales staff:</td>
+                <td><input type="radio" name="staff" value="1" required>Very dissatisfied</input></td>
+                <td><input type="radio" name="staff" value="2" required>Dissatisfied</input></td>
+                <td><input type="radio" name="staff" value="3" required>Neutral</input></td>
+                <td><input type="radio" name="staff" value="4" required>Satisfied</input></td>
+                <td><input type="radio" name="staff" value="5" required>Very satisfied</input></td>
+            </tr>
+            <tr height="50px">
+            <td>Your experience at the register:</td>
+                <td><input type="radio" name="register" value="1" required>Very dissatisfied</input></td>
+                <td><input type="radio" name="register" value="2" required>Dissatisfied</input></td>
+                <td><input type="radio" name="register" value="3" required>Neutral</input></td>
+                <td><input type="radio" name="register" value="4" required>Satisfied</input></td>
+                <td><input type="radio" name="register" value="5" required>Very satisfied</input></td>
+            </tr>
+            <tr height="50px">
+            <td>The organization of the store:</td>
+                <td><input type="radio" name="organization" value="1" required>Very dissatisfied</input></td>
+                <td><input type="radio" name="organization" value="2" required>Dissatisfied</input></td>
+                <td><input type="radio" name="organization" value="3" required>Neutral</input></td>
+                <td><input type="radio" name="organization" value="4" required>Satisfied</input></td>
+                <td><input type="radio" name="organization" value="5" required>Very satisfied</input></td>
+            </tr>
+            <tr height="50px">
+            <td>The wait for the fitting room:</td>
+                <td><input type="radio" name="fitting_room" value="1" required>Very dissatisfied</input></td>
+                <td><input type="radio" name="fitting_room" value="2" required>Dissatisfied</input></td>
+                <td><input type="radio" name="fitting_room" value="3" required>Neutral</input></td>
+                <td><input type="radio" name="fitting_room" value="4" required>Satisfied</input></td>
+                <td><input type="radio" name="fitting_room" value="5" required>Very satisfied</input></td>
+            </tr>
+            <tr height="50px">
+            <td>The products offered in the store:</td> 
+                <td><input type="radio" name="products" value="1" required>Very dissatisfied</input></td>
+                <td><input type="radio" name="products" value="2" required>Dissatisfied</input></td>
+                <td><input type="radio" name="products" value="3" required>Neutral</input></td>
+                <td><input type="radio" name="products" value="4" required>Satisfied</input></td>
+                <td><input type="radio" name="products" value="5" required>Very satisfied</input></td>
+            </tr>
+            <tr height="50px">
+            <td>The price of the products:</td> 
+                <td><input type="radio" name="price" value="1" required>Very dissatisfied</input></td>
+                <td><input type="radio" name="price" value="2" required>Dissatisfied</input></td>
+                <td><input type="radio" name="price" value="3" required>Neutral</input></td>
+                <td><input type="radio" name="price" value="4" required>Satisfied</input></td>
+                <td><input type="radio" name="price" value="5" required>Very satisfied</input></td>
+            </tr>
+            <tr height="50px">
+            <td>The sizes available at the store:</td> 
+                <td><input type="radio" name="sizes" value="1" required>Very dissatisfied</input></td>
+                <td><input type="radio" name="sizes" value="2" required>Dissatisfied</input></td>
+                <td><input type="radio" name="sizes" value="3" required>Neutral</input></td>
+                <td><input type="radio" name="sizes" value="4" required>Satisfied</input></td>
+                <td><input type="radio" name="sizes" value="5" required>Very satisfied</input></td>
+            </tr>
+            </table>
+            <p>Your Email Address: <input type="text" name="email" required></p>
+            <input type="submit">
+            <a href="/results">See results</a>
+        </form>
+    </body>
+</html>
